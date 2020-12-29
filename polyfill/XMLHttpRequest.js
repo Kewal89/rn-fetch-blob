@@ -2,7 +2,8 @@
 // Use of this source code is governed by a MIT-style license that can be
 // found in the LICENSE file.
 
-import RNFetchBlob from '../index.js'
+// import RNFetchBlob from '../index.js'
+import {NativeModules} from 'react-native'
 import XMLHttpRequestEventTarget from './XMLHttpRequestEventTarget.js'
 import Log from '../utils/log.js'
 import Blob from './Blob.js'
@@ -19,6 +20,7 @@ const OPENED = 1
 const HEADERS_RECEIVED = 2
 const LOADING = 3
 const DONE = 4
+const RNFetchBlob = NativeModules.RNFetchBlob
 
 export default class XMLHttpRequest extends XMLHttpRequestEventTarget{
 
